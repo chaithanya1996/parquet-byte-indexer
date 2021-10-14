@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.15 FATAL_ERROR)
+project(dlake-byte-indexer) 
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_PREFIX_PATH ${CMAKE_SOURCE_DIR}/include_libs/usr/local)
+message(STATUS ${CMAKE_PREFIX_PATH})
+find_package(Arrow REQUIRED)
+add_executable(dlake-indexer src/indexer.cc)

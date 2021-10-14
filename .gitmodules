@@ -1,0 +1,4 @@
+[submodule "arrow"]
+	path = arrow
+	url = https://github.com/apache/arrow.git
+	branch = release-5.0.0
