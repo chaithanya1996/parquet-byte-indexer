@@ -1,8 +1,16 @@
 #include "JsonArgumentParser.hpp"
+#include <nlohmann/json.hpp>
+#include<iostream>
+#include <string>
 
-nlohmann::json parseArgument(std::string jsonArg){
+using namespace nlohmann;
+
+nlohmann::json parseArgument(char* jsonFile){
     nlohmann::json parsedArgs;
-    parsedArgs = nlohmann::parse(jsonArg);
+    std::string jsonFilePath(jsonFile);
+    std::cout << jsonFilePath << std::endl;
+    // std::ifstream i(jsonFilePath);
+    // i >> parsedArgs;
+    
     return parsedArgs;
-
 }

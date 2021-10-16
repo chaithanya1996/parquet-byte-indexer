@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 3.15 FATAL_ERROR)
 project(dlake-byte-indexer) 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 11)
+
+set(CMAKE_C_COMPILER "/usr/local/gcc-11")
+set(CMAKE_CXX_COMPILER "/usr/local/bin/g++-11")
 
 set(CMAKE_PREFIX_PATH ${CMAKE_SOURCE_DIR}/include_libs/usr/local)
 include_directories(${CMAKE_SOURCE_DIR}/include_libs/usr/local/include/)
